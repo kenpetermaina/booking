@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahmeed Express - Book. Pay. Travel.</title>
+  <meta name="description" content="Tahmeed Express - Easy, safer and convenient bus booking across Kenya and East Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <img src="images/tahmeed-logo.png" alt="Tahmeed Express" class="logo">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Print Ticket</a>
+        <a href="#" class="nav-signin">Sign In / Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bus.jpg" alt="Tahmeed Express Bus" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Book. Pay. Travel.</h1>
+      <p class="hero-sub">Easy, safer and Convenient booking</p>
+    </div>
+    <div class="booking-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> FROM</label>
+          <input type="text" placeholder="Departure location">
+        </div>
+        <div class="form-group">
+          <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> TO</label>
+          <input type="text" placeholder="Select destination">
+        </div>
+        <div class="form-group">
+          <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> TRAVEL DATE</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> PASSENGERS</label>
+          <select>
+            <option>1 passenger</option>
+            <option>2 passengers</option>
+            <option>3 passengers</option>
+            <option>4 passengers</option>
+            <option>5 passengers</option>
+            <option>6 passengers</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn-whatsapp" onclick="bookWhatsApp()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        Book via WhatsApp
+      </button>
+    </div>
+    <a href="tel:0733391352" class="call-badge">
+      <span class="call-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </span>
+      <span class="call-text">
+        <small>CALL US NOW</small>
+        <strong>0733 391 352</strong>
+      </span>
+    </a>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="advantages">
+    <h2>Our Advantages</h2>
+    <div class="advantages-grid">
+      <div class="advantage-card">
+        <img src="images/mpesa-badge.png" alt="Lipa Na Mpesa" loading="lazy">
+        <h3>Lipa Na Mpesa</h3>
+        <p>Book from anywhere using MPesa, online booking, and multiple payment options for ultimate convenience.</p>
+      </div>
+      <div class="advantage-card">
+        <img src="images/we-care.png" alt="We Care" loading="lazy">
+        <h3>We Care</h3>
+        <p>Most comfortable buses on Kenyan roads with ample legroom to ensure you reach your destination fully relaxed.</p>
+      </div>
+      <div class="advantage-card">
+        <img src="images/no1-badge.png" alt="No 1 Bus Countrywide" loading="lazy">
+        <h3>No 1 Bus Countrywide</h3>
+        <p>Leading public bus transporter in Kenya for 16 consecutive years with unmatched service excellence.</p>
+      </div>
+      <div class="advantage-card">
+        <img src="images/sleeping-coach.jpg" alt="Sleeping Coach" loading="lazy">
+        <h3>Sleeping Coach</h3>
+        <p>First sleeping coach in Eastern Africa with largest seats for luxurious overnight travel experience.</p>
+      </div>
+      <div class="advantage-card">
+        <img src="images/amenities.png" alt="Full Amenities" loading="lazy">
+        <h3>Full Amenities</h3>
+        <p>Air conditioning, high-speed WiFi, and power outlets to keep you connected and comfortable throughout your journey.</p>
+      </div>
+      <div class="advantage-card">
+        <img src="images/comfort.jpg" alt="Ultimate Comfort" loading="lazy">
+        <h3>Ultimate Comfort</h3>
+        <p>Premium seating designed for maximum comfort with ergonomic support for short and long-distance travel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR ROUTES -->
+  <section class="routes">
+    <h2>Popular Routes</h2>
+    <div class="routes-grid">
+      <div class="route-card">
+        <div class="route-img">
+          <img src="images/route-kampala.jpg" alt="Kampala" loading="lazy">
+          <span class="route-badge">Daily</span>
+        </div>
+        <div class="route-info">
+          <h3>Tuvuke Boarder Kampala</h3>
+          <p class="route-status"><span class="dot"></span> Available Now</p>
+          <p class="route-duration">🕐 12 hours</p>
+          <div class="route-bottom">
+            <span class="route-price">KSH 2,500</span>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-img">
+          <img src="images/route-dar.jpg" alt="Dar es Salaam" loading="lazy">
+          <span class="route-badge">Daily</span>
+        </div>
+        <div class="route-info">
+          <h3>Dar es Salaam Mpo</h3>
+          <p class="route-status"><span class="dot"></span> Available Now</p>
+          <p class="route-duration">🕐 8 hours</p>
+          <div class="route-bottom">
+            <span class="route-price">KSH 1,800</span>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-img">
+          <img src="images/route-mombasa.jpg" alt="Mombasa" loading="lazy">
+          <span class="route-badge">Multiple Daily</span>
+        </div>
+        <div class="route-info">
+          <h3>Mombasa Hoye</h3>
+          <p class="route-status"><span class="dot"></span> Available Now</p>
+          <p class="route-duration">🕐 7 hours</p>
+          <div class="route-bottom">
+            <span class="route-price">KSH 1,200</span>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-img">
+          <img src="images/route-arusha.jpg" alt="Arusha" loading="lazy">
+          <span class="route-badge">3x Weekly</span>
+        </div>
+        <div class="route-info">
+          <h3>Twende Arusha</h3>
+          <p class="route-status"><span class="dot yellow"></span> Limited Seats</p>
+          <p class="route-duration">🕐 14 hours</p>
+          <div class="route-bottom">
+            <span class="route-price">KSH 3,200</span>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-img">
+          <img src="images/route-kisumu.jpg" alt="Kisumu" loading="lazy">
+          <span class="route-badge">Daily</span>
+        </div>
+        <div class="route-info">
+          <h3>Kisumu Dala</h3>
+          <p class="route-status"><span class="dot"></span> Available Now</p>
+          <p class="route-duration">🕐 6 hours</p>
+          <div class="route-bottom">
+            <span class="route-price">KSH 1,000</span>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="route-card">
+        <div class="route-img">
+          <img src="images/route-nairobi.jpg" alt="Nairobi" loading="lazy">
+          <span class="route-badge">Daily</span>
+        </div>
+        <div class="route-info">
+          <h3>Nairobi Tuko Poa</h3>
+          <p class="route-status"><span class="dot"></span> Available Now</p>
+          <p class="route-duration">🕐 5 hours</p>
+          <div class="route-bottom">
+            <span class="route-price">KSH 1,500</span>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Tahmeed Express. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
